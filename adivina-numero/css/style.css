@@ -9,14 +9,42 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0d0d0d; /* fondo oscuro */
   color: #e0e0e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   padding: 20px;
 }
 
-main {
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btnBack {
+  background: none;
+  border: none;
+  color: #00ffcc;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnBack:hover {
+  background-color: #2d88ff;
+  color: #f0f0f0
+}
+
+.container {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.juego {
   background-color: #1a1a1a;
   border-radius: 15px;
   padding: 30px;
@@ -27,8 +55,7 @@ main {
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 15px;
+  font-size: 1.8em;
   color: #00ffcc;
   text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff00ff;
 }
@@ -94,12 +121,12 @@ button:hover {
 
 /* Adaptable a móviles */
 @media screen and (max-width: 500px) {
-  main {
+  .juego-container {
     padding: 20px;
   }
 
   h1 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
   input[type="number"] {

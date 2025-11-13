@@ -9,16 +9,38 @@ body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: #18191a; /* fondo oscuro Meta */
   color: #e4e6eb; /* texto claro */
+  padding: 15px;
+}
+
+header {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 30px 15px;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.btnBack {
+  background: none;
+  border: none;
+  color: #00ffcc;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnBack:hover {
+  background-color: #2d88ff;
+  color: #f0f0f0
 }
 
 .contenedor {
   width: 100%;
-  max-width: 520px;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
 }
 
 /* Contenedor principal */
@@ -33,7 +55,6 @@ body {
 /* Títulos */
 h1 {
   font-size: 1.8em;
-  margin-bottom: 10px;
   text-align: center;
   color: #e4e6eb;
 }

@@ -8,16 +8,21 @@
     <script src="js/adivina-numero.js" defer></script>
   </head>
   <body>
-    <main class="juego">
+    <header>
       <h1>Adivina el número</h1>
-      <p>
-        Adivinar el número secreto entre 1 y 100. Tienes 10 intentos.
-      </p>
-      <label for="numIntento">Tu suposición:</label>
-      <input type="number" id="numIntento" min="1" max="100" />
-      <button id="btnProbar">Adivinar</button>
-      <p id="respuesta"></p>
-      <button id="btnVolverJugar">Volver a jugar</button>
+      <a href="../index.html" class="btnBack">&lt; Volver</a>
+    </header>
+    <main class="container">
+      <div class="juego">
+        <p>
+          Adivinar el número secreto entre 1 y 100. Tienes 10 intentos.
+        </p>
+        <label for="numIntento">Tu suposición:</label>
+        <input type="number" id="numIntento" min="1" max="100" />
+        <button id="btnProbar">Adivinar</button>
+        <p id="respuesta"></p>
+        <button id="btnVolverJugar">Volver a jugar</button>
+        </div>
     </main>
   </body>
 </html>

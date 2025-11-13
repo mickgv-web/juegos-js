@@ -2,10 +2,38 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0d0d0d;
   color: #e0e0e0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btnBack {
+  background: none;
+  border: none;
+  color: #00ffcc;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnBack:hover {
+  background-color: #2d88ff;
+  color: #f0f0f0
+}
+
+.container {
+  width: 100%;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .juego {

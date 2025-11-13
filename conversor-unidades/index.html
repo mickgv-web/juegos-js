@@ -8,47 +8,53 @@
     <script src="js/conversor.js" defer></script>
   </head>
   <body>
-    <main class="conversor">
+    <header>
       <h1>Conversor de Unidades</h1>
-      <p>Convierte entre Celsius, Fahrenheit y Kelvin.</p>
-      <!-- Conversor de temperatura -->
-      <label for="valorInput">Ingresa el valor:</label>
-      <input type="number" id="valorInput" />
-      <label for="unidadDesde">Desde:</label>
-      <select id="unidadDesde">
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-        <option value="kelvin">Kelvin</option>
-      </select>
-      <label for="unidadHacia">Hacia:</label>
-      <select id="unidadHacia">
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-        <option value="kelvin">Kelvin</option>
-      </select>
-      <button id="btnConvertir">Convertir</button>
-      <p id="resultado"></p>
+      <a href="../index.html" class="btnBack">&lt; Volver</a>
+    </header>
+    <main class="container">
+      <div class="conversor">
+        <h2>Conversor de Temperatura</h2>
+        <p>Convierte entre Celsius, Fahrenheit y Kelvin.</p>
+        <!-- Conversor de temperatura -->
+        <label for="valorInput">Ingresa el valor:</label>
+        <input type="number" id="valorInput" />
+        <label for="unidadDesde">Desde:</label>
+        <select id="unidadDesde">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        <label for="unidadHacia">Hacia:</label>
+        <select id="unidadHacia">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        <button id="btnConvertir">Convertir</button>
+        <p id="resultado"></p>
 
-      <hr />
+        <hr />
 
-      <!-- Conversor de moneda -->
-      <h2>Conversor de Moneda</h2>
-      <label for="valorMoneda">Cantidad:</label>
-      <input type="number" id="valorMoneda" />
-      <label for="monedaDesde">Desde:</label>
-      <select id="monedaDesde">
-        <option value="EUR">Euro (EUR)</option>
-        <option value="USD">Dólar (USD)</option>
-        <option value="GBP">Libra (GBP)</option>
-      </select>
-      <label for="monedaHacia">Hacia:</label>
-      <select id="monedaHacia">
-        <option value="EUR">Euro (EUR)</option>
-        <option value="USD">Dólar (USD)</option>
-        <option value="GBP">Libra (GBP)</option>
-      </select>
-      <button id="btnConvertirMoneda">Convertir Moneda</button>
-      <p id="resultadoMoneda"></p>
+        <!-- Conversor de moneda -->
+        <h2>Conversor de Moneda</h2>
+        <label for="valorMoneda">Cantidad:</label>
+        <input type="number" id="valorMoneda" />
+        <label for="monedaDesde">Desde:</label>
+        <select id="monedaDesde">
+          <option value="EUR">Euro (EUR)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="GBP">Libra (GBP)</option>
+        </select>
+        <label for="monedaHacia">Hacia:</label>
+        <select id="monedaHacia">
+          <option value="EUR">Euro (EUR)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="GBP">Libra (GBP)</option>
+        </select>
+        <button id="btnConvertirMoneda">Convertir Moneda</button>
+        <p id="resultadoMoneda"></p>
+      </div>
     </main>
   </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel , Tijera</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/piedra-papel-tijera.js" defer></script>
+  </head>
+  <body>
+    <main class="juego">
+      <h1>Piedra, Papel o Tijera</h1>
+      <p>Elige tu jugada y compite contra el Pc.</p>
+      <label for="eleccionUsuario">Tu elección:</label>
+      <div class="elecctionUsuario">
+        <ul>
+          <li>
+            <a href="#" id="piedra" class="opcion">
+              <img src="img/piedra.svg" alt="imagen-piedra" />
+              <p>Piedra</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="papel" class="opcion">
+              <img src="img/papel.svg" alt="imagen-papel" />
+              <p>Papel</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="tijera" class="opcion">
+              <img src="img/tijeras.svg" alt="imagen-tijera" />
+              <p>Tijera</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p id="resultado"></p>
+
+      <div class="marcador oculto">
+        <p>🏆 Victorias: <span id="victorias">0</span></p>
+        <p>💀 Derrotas: <span id="derrotas">0</span></p>
+        <p>🤝 Empates: <span id="empates">0</span></p>
+      </div>
+
+      <button id="btnReiniciar">Reiniciar Juego</button>
+    </main>
+  </body>
+</html>

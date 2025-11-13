@@ -1,0 +1,17 @@
+[
+  {
+    "texto": "¿Qué etiqueta HTML se utiliza para crear un enlace?",
+    "opciones": ["<link>", "<a>", "<href>", "<url>"],
+    "correcta": 1
+  },
+  {
+    "texto": "¿Qué propiedad CSS se usa para cambiar el color del texto?",
+    "opciones": ["background-color", "font-color", "color", "text-style"],
+    "correcta": 2
+  },
+  {
+    "texto": "¿Cuál de las siguientes opciones muestra correctamente un mensaje en la consola con JavaScript?",
+    "opciones": ["console.log('Hola');", "log.console('Hola');", "print('Hola');", "alert.console('Hola');"],
+    "correcta": 0
+  }
+]

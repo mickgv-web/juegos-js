@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #202124; /* fondo oscuro tipo Google */
+  color: #e8eaed; /* texto claro */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Contenedor principal */
+.conversor {
+  background-color: #2d2e30;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Títulos */
+h1, h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #e8eaed;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 0.95em;
+  color: #bdc1c6; /* gris secundario */
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  color: #e8eaed;
+}
+
+/* Inputs y selects */
+input[type="number"], select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1px solid #5f6368;
+  border-radius: 8px;
+  background-color: #202124;
+  color: #e8eaed;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus, select:focus {
+  border-color: #4285f4; /* azul Google */
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.4);
+  outline: none;
+}
+
+/* Botones */
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4285f4; /* azul Google */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #3367d6;
+  box-shadow: 0 2px 6px rgba(66,133,244,0.5);
+}
+
+/* Resultados */
+#resultado, #resultadoMoneda {
+  margin-top: 15px;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: #e8eaed;
+  background-color: #3c4043;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Separador */
+hr {
+  border: none;
+  border-top: 1px solid #5f6368;
+  margin: 30px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .conversor {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.4em;
+  }
+
+  button {
+    width: 100%;
+  }
+}

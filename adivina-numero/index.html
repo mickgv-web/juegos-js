@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/adivina-numero.js" defer></script>
+  </head>
+  <body>
+    <main class="juego">
+      <h1>Adivina el número</h1>
+      <p>
+        Adivinar el número secreto entre 1 y 100. Tienes 10 intentos.
+      </p>
+      <label for="numIntento">Tu suposición:</label>
+      <input type="number" id="numIntento" min="1" max="100" />
+      <button id="btnProbar">Adivinar</button>
+      <p id="respuesta"></p>
+      <button id="btnVolverJugar">Volver a jugar</button>
+    </main>
+  </body>
+</html>

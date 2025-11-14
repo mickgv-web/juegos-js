@@ -168,6 +168,10 @@ ul {
     max-width: 98%;
   }  
   
+  .contenido {
+    width: 100%;
+  }
+
   .todo-app {
     padding: 15px;
   }
